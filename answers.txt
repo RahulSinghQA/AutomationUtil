@@ -1,0 +1,864 @@
+1:- What is Constructor?
+
+    a) Constructor is a special method whose task is to initialize the object of its class.
+    b) It is special method because its name is same on it's class name.
+    c) They can not be inherited,though a derived class can call the parent class constructor.
+    d) They do not have any return type not even void though it can not return values.
+   
+ ---  main work of constructor
+    1. stores comman code 
+    2. initialization of instance variables (because it initializes a newly created oject)
+
+******************************************************************************************************
+
+2:- What is Encapsulation?
+a)  Binding the data and corresponding methods in single entity is called Encapsulation.
+    b) If in java any class follows Abstraction and Data hinding concept so such type of class is said 
+         to be Encapsulated class.
+    c) It talks about security.
+    d) It improves modularity and maintainability.
+    e) Enhancement will become very easy.
+
+******************************************************************************************************    
+3:- What is Abstraction?
+a) Hiding the internal implimentation and just highlighting the set of services is called Abstraction.
+    b) By using abstract class and interface we can achive abstraction.
+    c) It improves modularity and maintainability.
+    d) Enhancement will become very easy.
+
+******************************************************************************************************
+
+4:- What is Polymorphism?
+
+a) Same name with different forms this concept is called polymorphism.
+    b) Polymorphism classified in two parts 1- Compiletime polymorphism  ,  2- Runtime polymorphism.
+    c) Compiletime polymorphism divided in two parts 1- Overloading  ,  2- Method Hiding.
+    d) Runtime polymorphism also divided in one part 1- Overriding.
+
+******************************************************************************************************
+
+5:- What are the basic pillers of Oops?
+
+ There are three basic pillers of Oops which are 
+    a) Inheritance talks about Reusability.
+    b) Encapsulation talks about Security.
+    c) Polymorphism talks about Flexibility.
+
+******************************************************************************************************
+
+6:- What is Overloading?
+a) In java if two methods having same name with different arguments this concept is known as method
+         overloading.
+    b) Having overloading concept in java reduces comlexity of the programming.
+    c) In overloading compiler will responsible to perform method resolution based on the reference 
+         type, that is why overloading considered as Compiletime polymorphism.
+
+******************************************************************************************************
+
+7:- What is Overriding?
+ a) Whatever the parent class has by default available to the child class through inheritance.If 
+          child class is not satisfied with its parent class implimentation then child class is allow
+         to redefine that parent class method this concept is known as overriding.
+
+ b) We can not override static , private, and final things.
+
+
+******************************************************************************************************
+   
+8:- What are the difference between Overriding and Method Hidding?
+
+ method hiding:-
+       1) both parent and child class method should be static.
+       2) method resolution is always take care by compiler based on reference type.
+       3) method hiding is always considered as compiletime polymorphism.
+
+    method overriding:-
+       1) both parent and child class method shouldn't be static.
+       2) method resolution is always take care by JVM on runtime object.
+       3) overriding concept is always considered as runtime polymorphism.
+
+******************************************************************************************************
+
+9:- What do you mean by Method Signature?
+
+ method signature contains name of the method and arguments of the method.
+
+
+******************************************************************************************************
+10:- What is Class in JAVA?
+
+ Class is a blueprint. A class can contains methods, variables, blocks.
+
+******************************************************************************************************
+
+11:- What is Acces Modifiers?
+
+ 1) Java provides some access modifiers which are public, private, final, and protected.
+     2) they shows accessibility of a class, variable method and consftructor as well.
+     3) they have default accessibility when no access modifier is specified.
+
+******************************************************************************************************
+
+12:- What is Selenium?
+
+ 1) Selenium is an open source.It is a automation tool.
+     2) It supports only web based applications.
+     3) It contains locators.
+     4) It supports many languages like Ruby, perl, Java, C++ and all.
+     5) It supports many browsers like ChromeDriver, firefoxDriver, IntenetExplorer, Safari and so on.
+
+******************************************************************************************************
+
+
+13:- What is Assert and Verify?
+
+     Assert:-
+   1) If condition is false then the execution of code will stop and rest test cases won't execute too.
+   2) If condition is true then the execution of code will execute continuously.
+     
+         Verify:-
+     1) There is no matter whether the condition is true or false the execution of code will execute
+          continuously any type of halt won't occur.
+
+******************************************************************************************************
+
+14:- What do mean by Annotations in TestNG? and explain of these.
+
+ The annotations of TestNG:-
+     1- Before Suite
+     2- Before Test
+     3- Before Class
+     4- Before Method
+     5- Test
+     6- After method
+     7- After Class 
+     8- After Test
+     9- After Suite
+
+******************************************************************************************************
+
+15:- How can we handle window or windows?
+
+WebDriver provides two methods for window handle.
+   1- getWindowHandle() = It is used to get the address of the current browser and it's return type is
+                                String.
+   2- getWindowHandles() = It is used to get the adderss of all the open browsers and it's return type
+                               is <Set>String.
+
+******************************************************************************************************
+
+16:- How can we select value in Drop Down?
+
+        There is a Select class,it provides the implimentation of the HTML SELECT tag it also provides
+            three methods to select the values from dropdowns. these  methods are:-         
+        1) selectByValue() = Under this we need to pass value of the element.
+        2) selectByIndex() = Under this we neeed to pass index value the element.
+        3) selectByVisibleText() = Under this we need to pass visible text of the the element.
+
+******************************************************************************************************
+
+17:- What is Singleton Class?
+
+ 1) For any java class if we allow to create only one object such type of class is said to be 
+           singleton class.
+     2) Constructor should be private.
+     3) We can create our own singleton classes we just need to create private constructor, static 
+           variables and factory methods.
+     4) We can create any ton class like double ton , triple ton...etc.
+
+******************************************************************************************************
+
+18:- Difference between equals() and == operator?
+
+ 1) equals() = equals is a method and it decides the decision on the bases of content base.
+         
+           String s1 = "Hello";
+           String s2 = "Hello";
+              if(s1.equals(s2)){
+                  s.o.pln("true");
+              }else
+                   s.o.pln("false");
+    output- true
+ 
+     2) (==) = double equals are operator and it decides the decision on the bases of reference or 
+                     address of the memory.
+
+               String s1 = "Hello";
+               String s2 = new String("Hello");
+                        if(s1 == s2){
+                  s.o.pln(true);
+              }else
+                   s.o.pln("false");
+    output- false
+
+******************************************************************************************************
+                
+19:- where the class object will store?
+
+Object will store in heap area.And string object with string literal it will store in string constant
+pool.
+
+******************************************************************************************************
+
+20:- What is Inheritance?
+
+     1) Inheritence is also known as IS-A relationship.
+     2) We can implement it by using extends keyword.
+     3) It talks about reusability.
+
+ there are types of Inheritance
+
+    1) Multiple inheritance
+    2) Multilevel inheritance
+    3) cyclic inheritance
+
+******************************************************************************************************
+
+21:- Difference between String , String Buffer and String Builder?
+
+     String = 1) String creates immutable object hence we cannot change the value of object.
+              2) If we change the value of String a lot of time it will allocate more memeory.
+              3) It is non-synchronize
+              4) It is faster then StringBuffer.
+              5) If the data is not changing frequently then we should definetly go with String
+ 
+     String Buffer = 1) It creates mutable object hence we can change the value of object.
+                     2) It consumes less memory.
+                     3) It is synchronize.
+                     4) If the data is changing frequently then we should definetly go with String
+                           Buffer.
+
+     String Builder = 1) It creates mutable object hence we can change the value of object.
+                      2) It consumes less memory.
+                      3) It is non-synchronize.
+                      4) It is faster then both String and String Buffer.
+                      5) If the data is changing frequently then we should definetly go with String
+                            Builder.
+
+******************************************************************************************************
+
+22:- Difference between ArrayList and Array?
+
+     Array = 1) Array is a fixed no of index based collection.
+             2) Homogenous data elements are allowed.
+             3) The main advantage of it is that we can represent huge number of elements by using a
+                   single variable.
+
+           Disadvatage:-
+            1) Fixed in size.
+               Once we created an array then there is no chance to increasing or decreasing the size
+                 on our requirement, to use array concept we should know the size in advance which may
+                       not possible always.
+
+     ArrayList = 1) If we want to represent a group of individual object as a single entity then we 
+                       should go for ArrayList.
+                 2) Child interface of List interface.
+                 3) It is resizable or growable.
+                 4) Duplicates are allowed.
+                 5) Insertion order is preserved.
+                 6) default capacity is 16.
+                 7) Null insertion is preserved.
+
+******************************************************************************************************
+
+23:- How many types of waits in Selenium?
+
+There are two types of waits.
+    1) Static and 2) dynamic.
+
+ 1) Static = thread.sleep(); --> we use this in debbuging case.
+ 2) Dynamic = implicitwait, explicitwait, fluentwait.
+
+           implicitwait = It will wait for all the elements which are present on webpage. it is global
+                                wait.
+                         - It will tell to the webdriver to wait for certain amount of time before 
+                                  throws a "NoSuchElementException".
+                         - It will accept two arguments first will accept as an integer value and 
+                               second will accept time measurement int terms of SECOND, NANOSECOND, 
+                                  MILI and MICROSECOND, MINUTES, DAYS,HOURS etc.
+                         - The main disadvantage of it is that is slows down the performence of test.
+
+            explicitwait = It will wait for the particular element which is present on webpage.
+                         - It will tell to the web driver to wait for certain condition or maximum time 
+                             exceeded before throwing "ElementNotVisibleException".
+                         - It is an intelligent kind of wait.
+
+            fluentwait =   It will wait for specific element.
+                           by using fluentwait we can set maximum wait time period.
+                           we can also set polling frequency.
+                           we can also set to ignore specific exceptions.
+
+******************************************************************************************************
+
+24:- What is Agile Methodology?
+
+Agile Methodology = is a way to manage a project breaking it up into several phases like- 
+                   Requirements - Define the requirements for the iteration based on the product
+                               backlog, sprint backlog, customer and stakeholder feedback
+                   Development - Design and develop software based on defined requirements
+                   Testing - QA (Quality Assurance) testing, internal and external training,
+                            documentation development
+                   Delivery - Integrate and deliver the working iteration into production
+                   Feedback - Accept customer and stakeholder feedback and work it into the 
+                                requirements of the next iteration
+
+                  It involves constant collaboration with stakeholder and continuously improvement at
+                          every stage. Once the work begins, team cycle goes through a process of 
+                          planning, execution and evluation. Continuous collaboration is important for
+                          both team members and stakeholder.
+
+******************************************************************************************************
+
+25:- What is Regression Testing?
+
+Regression Testing = is re-running functional or non-functional tests. Here testers verify the changes
+                   which are done by the developers as per the customer's requirement, like developers
+               do some changes in the codebase that do not impact on the existing feature or 
+         functionality of the software , the changes could include fixing bugs,update current features,
+                    finding more bugs in updated feature and add new features.
+
+******************************************************************************************************
+
+26:- What is Re-Testing?
+
+Re-testing = If tester finds bug while final execution of test cases and assign it to the developer
+                     to fix it.Then the developer fix the bug and assign it back to the testers for 
+                      verification.When testers ensure that the won't ouccer again.this continuous
+                      process is called Re-Testing.
+
+
+******************************************************************************************************
+
+27:- What is Functional and Non-Functional Testing?
+
+     Functional Testing = 
+     Non-Functional Testing = 
+
+******************************************************************************************************
+
+28:- What is sevrity and Priority? 
+
+     Severity = Impact of the bug on the customer's business workflow.
+     Priority = If you are raising any bug for any application then
+                 how soon you want the developer fix the bug.
+
+******************************************************************************************************
+
+29:- Difference between List and Set?
+
+List =       1) If we want to represent a group of individual object as a single entity where duplicacy
+                is allowed and insertion order is also preserved.
+            2) It is a child interface of Collection.
+            3) It's child classes are --- Arraylist and Linked list.
+            4) It's legacy classes are --- Vactor and Stack.
+
+     Set = 1) If we want to represent a group of individual object as a single entity where duplicacy 
+              is not allowed and insertion order is not preserved then we should go for Set interface.
+           2) It is a child interface of Collection.
+           3) It's child interfaces are ShortedSet --- NavigableSet----TreeSet(Implimented child class of ShortedSet and NavigableSet)
+           4) It' child classes are HashSet --- LinkedHashSet.
+
+******************************************************************************************************
+
+30:- Difference between HashMap and Hashtable?
+
+HashMap = 1) If we want to represent a group of object as "key-value" pair then we should go for Hashmap.
+               2) No method is synchronized.
+               3) Multiple threads can operate simultaniously on hashmap object hence it is not 
+                     thread safe.
+               4) Performence is high.
+               5) Null is allow for both key and value.
+               6) It is non legacy.
+
+     Hashtable = 1) If we want to represent a group of object as "key-value" pair then we should go for Hashtable.
+                 2) Every method is synchronized.
+                 3) Multiple threads cannot operate simultaniously on Hashtable object hence
+                      Hashtable object.
+                 4) Performence is low.
+                 5) Null is not allow for both key and value otherwise we will get NullPointerEeception.
+                 6) It is legacy.
+
+******************************************************************************************************
+
+31:- What is Garbage Collector?
+
+    Garbage Collector = 
+
+******************************************************************************************************
+
+32:- Can we execute a Class without writing main()?
+
+   No, we can not execute any class without writing main() in java.If we do then we will get run
+          time error and error would be 
+
+******************************************************************************************************
+
+33: How will you switch to a frame?
+
+Switch to frame
+
+******************************************************************************************************
+
+34:- How to launch chrome?
+
+WebDriver driver = new ChromeDriver();
+
+******************************************************************************************************
+
+35:- What is XPath and its types?
+
+******************************************************************************************************
+
+36:- When we go for Automation?
+
+******************************************************************************************************
+
+37:- What is Automation testing?
+
+******************************************************************************************************
+
+38:- What is Manual Testing?
+
+******************************************************************************************************
+
+39:- What is White Box Testing?
+
+White Box Testing = 1) It conducts internal logic of the software or an application.
+                         2) Under this testing developers are totally involved.
+                         3) this is also known as transparent,codebase,structure testing and all.
+     
+******************************************************************************************************
+
+40:- What is Black Box Teting?
+
+             Abstract Class                           Interface
+
+1) Abstract class can have both              Interface can have only unimplemented
+   implimented and unimplimented             methods but after java 8 it can have
+   methods.                                  implemented methods as well.
+
+2) Abstract class cann't have an             Interface cann't have an object.
+   object.
+
+3) Abstract class can extends a              Interface can only impliments an 
+   class and implementan interface           interface at a time but cann't extend
+   at a time.                                a class.
+
+4) Abstract class can be inherited by        Interface can be inherited by a class
+   class but that class have to give         with extends keyword.
+   implementation it's unimplimented 
+   methods.
+
+******************************************************************************************************
+
+41:- How can we go to next page and back on web page?
+
+******************************************************************************************************
+
+42:- How many locators in Selenium?
+
+******************************************************************************************************
+
+43:- What is Bug life cycle?
+
+   1) New
+   2) aasign
+   3) open
+   4) verify
+   5) fix
+   6) re-test
+   7) close
+
+******************************************************************************************************
+
+44:- How can we move over an element and click on element on web page?
+
+******************************************************************************************************
+
+45:- What is STLC/SDLC?
+
+******************************************************************************************************
+
+47:- What is Verification and Vailidation?
+
+      Verification:- 1) It is a process of checking of documents, design, code and programme.
+                     2) Here we check whether the software has been built according to the customer's 
+                          requirement or not.
+                     3) The main goal of this process is to ensure about quality of the product.
+                     4) In this process some kind of activities are involve like walkthrough, 
+                           inspection and review.
+
+      Validation:-   1) It is a dynamic machenism of testing.
+                     2) Here we validate if the software actually meets the exact need of the customer
+                            or not.
+                     3) The main goal of this process is to ensure that tha software is fullfiling
+                         the requirement or not.
+                     4) In this process some kind of activities are involve like Unit testing,
+                           integration testing and system testing, user acceptance testing.
+
+******************************************************************************************************
+
+48:- What is Local variable, Instance variable and Static variable?
+
+******************************************************************************************************
+
+49:- How can we skip test case?
+
+******************************************************************************************************
+
+50:- Features of JAVA?
+
+******************************************************************************************************
+
+51:- Test case v/s Test scenario?
+
+******************************************************************************************************
+
+52:- QA v/s QC?
+
+******************************************************************************************************
+
+53:- When do you stop testing?
+
+******************************************************************************************************
+
+54:- Smoke v/s Sanity?
+
+******************************************************************************************************
+
+55:- Alpha v/s Beta Testing?
+ 
+     Alpha Testing:- 1) It is a part of software testing.   
+                     2) This testing is done before releasing the product to the user or client or
+                           public.
+                     3) This testing is one of the type of User Acceptance Testing.
+                     4) It comes under both white box testing and black box testing.
+    
+     Beta Testing:-  1) This testing is done by the User who is not a part of organisation.
+                     2) This testing is one of the type of User Acceptance Testing.
+                     3) It is commonly used in black box testing.
+                     4) Reliability and security are checked during beta testing.
+
+******************************************************************************************************
+
+56:- Exploratory v/s Adhoc Testing?
+
+******************************************************************************************************
+
+57:- System Testing?
+
+******************************************************************************************************
+
+58:- Performance Testing?
+
+******************************************************************************************************
+
+59:- Agile Methodology?
+
+******************************************************************************************************
+
+60:- Software testing principal?
+
+******************************************************************************************************
+
+61:- Integration Testing?
+
+******************************************************************************************************
+
+62:- Test case design technique?
+      
+Error Gussesing
+
+              Error gusseing is one of the test case design technique
+              it is like that in how many ways a tester can find the errors
+              let say there is feild which says that it can accept the only
+              numeric values so as a good QA tester 
+
+Equavalence partitioning
+
+              it is also known as Equavalence class partitioning suppose there 
+              is a feild which says that it can accept those values which
+              will come between 1 - 500
+
+Baundary Value analysis
+
+              it is like the
+
+Decision Table Technique
+
+              in this technique we check for multiple conditions
+
+State transition technique:-
+
+              In this testing technique we test for different state of a
+              machine different screen of a machine and different transition of 
+              of any machine.
+
+******************************************************************************************************
+
+63:- jira?
+
+******************************************************************************************************
+
+64:- What is sprint / sprint backlog / product backlog?
+
+******************************************************************************************************
+
+65:- D/B Actions and Action?
+
+******************************************************************************************************
+
+66:- http?https
+
+  http =  Hyper Text Transfer Protocol.
+  https =  Hyper Text Transfer Protocol Secure.
+
+******************************************************************************************************
+
+67:- Define your framework
+
+******************************************************************************************************
+
+68:- TestNG framework/testNG.xml
+
+******************************************************************************************************
+
+69:- Types of Variables?
+
+******************************************************************************************************
+
+70:- final/finally/finalize?
+
+******************************************************************************************************
+
+71:- What is Exception and type of Exceptions
+
+******************************************************************************************************
+
+72:- Throws/Throw keyword
+
+******************************************************************************************************
+
+73:- Selenium exceptions
+
+******************************************************************************************************
+
+74:- Array/ArrayList/LinkedList
+
+******************************************************************************************************
+
+75:- Collection/types of collection
+
+******************************************************************************************************
+
+76:- Collections/Collection
+
+******************************************************************************************************
+
+77:- Exception/Error
+
+******************************************************************************************************
+
+78:- Code TakeScreenShot
+
+******************************************************************************************************
+
+79:- How to take ScreenShot of failed test case
+
+******************************************************************************************************
+
+80:- close/quite
+
+******************************************************************************************************
+
+81:- listener
+
+******************************************************************************************************
+
+82:- Soft assert / Hard assert
+
+******************************************************************************************************
+
+83:- How will you handle Dynamic element?
+
+******************************************************************************************************
+
+84:- D/B isEnabled() / isDisplayed() / is Selected
+
+******************************************************************************************************
+
+85:- this/super
+
+******************************************************************************************************
+
+86:- Dataprovider
+
+******************************************************************************************************
+
+87:- How to read data from excel file?
+
+******************************************************************************************************
+
+88:- What is PageFactory?
+
+******************************************************************************************************
+
+89:- What is object repositry?
+
+******************************************************************************************************
+
+90:- default value of wait
+
+******************************************************************************************************
+
+91:- What is Enum in java?
+
+******************************************************************************************************
+
+92:- What is multithreading?
+
+******************************************************************************************************
+
+93:- Parent of Interface?
+
+******************************************************************************************************
+
+94:- While working where you face more challenges?
+
+******************************************************************************************************
+
+95:- How will you use selenium to upload a file?
+
+******************************************************************************************************
+
+96:- JVM / JRE / JDK
+
+******************************************************************************************************
+
+97:- Get current date and time formate in java?
+
+******************************************************************************************************
+
+98:- What is wrapper class?
+
+******************************************************************************************************
+
+99:- Array / Collections
+
+******************************************************************************************************
+
+100:- What is Aggregation / Composition?
+
+******************************************************************************************************
+
+101:- What is Requirement Tracibility Matrix?
+
+    1) To ensure that all the application requirements are tested in the verification process
+    2) To check Test Coverage
+
+******************************************************************************************************
+
+102:- What is Throable , Throws , Throw?
+
+******************************************************************************************************
+-- Why Select class allow only web element as an argument?
+     because it works on a perticular element.
+
+
+-- Why Actions class allow only driver or reference variable of driver as an argument?
+     because it uses driver to perform actions.
+
+
+
+
+
+
+
+A) Tell them about yourself
+    1)who are you
+    2)No of experience
+    3)What tool you are using
+
+B) Which domain you are working on?
+
+C) You have a user story and you are not getting 
+the test data so how you will handle that siuation
+
+    1) I will ask the developer or test team or who
+      have developed the test data
+        because in different organisation we will get data
+      from the different test data team or the 
+       developer team so, I can ask to help from my team lead
+        and I can ask from my scrm master because 
+       scrm master knows like the entier process 
+       who will give you this test data.
+      In that situation I will find the correct person 
+     and reach out to that person after this I can 
+     get this things from that person. Then i will
+    start work on the user story. 
+
+4) You are a new QA hired in the company If they ask
+you to test the new function but they dont provide
+   lot of information to you So how do you tackle 
+  this situation.
+
+
+  Firstly I will check the new function myself 
+   and observe that how it works exactly. 
+******************************************************************************************************
+
+5) Explain the ceremonies of your methodology(Agile Methodology)
+
+   Sprint planning meeting -- in this meetig every team members are 
+                 present like developers , scrum master , team lead ,manager, QA testers,
+                   database team and all.
+
+   Daily scrum meeting -- what you had to tested yesterday and what are you 
+           testing today what will you be gonna do tommorow. There may be blocker 
+        that blocking your work so you will tell to the scrum master who will definetly 
+           help you to get this thing done.
+
+   Sprint review meeting -- basically in this meeting review the things what you
+                         have done in the perticular sprint. if the developer team 
+                         and testing team develope the framework or the new feature 
+                         they represent these things with all of the members.
+
+   Sprint retrospective meeting -- What different good things you have done. and what 
+                               What are the good things and what are the bad things you know 
+                                   they are going to discuss in this meeting.
+
+******************************************************************************************************
+
+
+
+******************************************************************************************************
+6)  400 series --  Client server error(bad request)
+                   when we send JSON request
+
+401 --  UnAuthorised  
+ 
+403 --  access tocken expired or wrong or missing
+200 serie -- (OK) means data inserted(in get request)
+                 everything is all right
+
+201 --  (data inserted)When data is created(when we create an aaccout then we get 201 code)
+
+202 --  request is accepted(this code we'll get in rare case)
+
+204 means -- data updated
+
+500 series -- server side error(When server is busy) 
+
+
+Write test cases for login page and search functionality.
+
+http://localhost:4444/selenium-server/driver/?cmd=shutDownSeleniumServer
+
+khushiQA321
+
+
+
+finalize is method that is used by garbage collect to destroy unused things.
+
+https://academy.katalon.com/courses/katalon-api-testing/
+Khushi#@123

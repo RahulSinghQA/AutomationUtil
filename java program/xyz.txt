@@ -1,0 +1,24 @@
+Table Of Content Which is Coverd 
+
+
+Browser Launch --------
+FindEleement ---------
+SendKeys -------
+Click --------
+getText() --------- 
+GetTitle() ---------
+Equals , EqualsIgnire Case , contains , ==
+Conditional Statment (If Else)
+isDispalyed();
+getSize();
+getLocation();
+isEnabled()
+isSelected();
+getAtrribute();
+Clear();
+
+
+Diff b/w = and ==
+
+= : to intilize a variable 
+== : To comapre two more things 

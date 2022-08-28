@@ -1,0 +1,93 @@
+                          Manual Testing
+                         
+mannual testing is the process of mannual testing software for defect it 
+requirs a tester to play the role of an and user.When by they use most of
+the applications features to ensure correct behaviers.
+
+                     Type of Application
+
+There are three type of application ___________
+1  Native Application
+2  Web application
+3  Hybrid application
+
+[1]  Native application
+
+     Native application are those that were design to run on a particulars 
+     operating system or in other word we can say the application which can
+     be installed on our desktop or mobile.
+
+[2]  Web application_____
+     
+     It is application  software that's run on a web server. unlike computer
+     based software program that  are run locally on the operating system of
+     the device.
+
+[3] Hybrid aplication_____
+    
+    The hybrid application are those the natative and web application comes
+    under the hybrid application.
+
+
+
+                     Testing Principal
+
+1.  Testing show presence of defect.
+2.  Complete testing is not possible.
+3.  Early testing.
+4.  Defect Clustring.
+5.  Pesticide Parodox.
+6.  Testing is context dependent.
+7.  Absence of error fallcy.
+
+
+[1] Testing show presence of defect__
+     
+    Testing talks about the present of defect and  don't talk about the absence of 
+    defect.
+    It's means software product 90% of bugg free.
+
+    Testing on application can reveal that are more defect exist in the aplication
+    there for it in important to desinge test cases which find as a many defect as 
+    apossible.
+
+[2] Complete testing is not possible____
+
+    It is not possible to test all possible combination of data and scenaros.
+
+    100% testing is not possible  because when a testing will be done for all
+    condition of application then here is spent of more time an also more.
+
+[3] Early Testing_____
+    
+    Early testing should start as a early as a possible in the software development
+    live cycle.
+    
+    If any defect in requirment are captured in early stage and it is fixed early
+    stage of testing.
+
+[4] Defect Clustring____
+   
+    In  this testing 80% of the problem are found in 20% of modules.
+    A small number of modules contains most of defect discovery during free reliese testing.
+
+[5] Pesticide parodox_____
+   
+    If the same test are  repeated over and over again evendually distest no  longer find any 
+    new defect.
+    
+    To defect new defect adjusting test and test data may need  changing and new test  may need 
+    to be defect.
+ 
+[6] Testing is context dependent______
+
+    Testing is the differently in  defect context ___
+    For example___ medical software is tested defferently from and is commerce software.
+    
+    A apporch to test an application would be different for two diffrent application.
+
+[7] Absence of error fallcy ____
+   
+   All type of testing is done for all specified requirment an fixing all defect found 
+   could steel product a system that is  diffecult to use that means does not fullfill
+   the users needs an expentation. 

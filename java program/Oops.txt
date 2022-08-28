@@ -1,0 +1,51 @@
+------------Inheritence----------
+
+class A{
+
+}
+class B extends A{
+
+}
+class C extends A{
+
+}
+
+InterFace A{
+public void m1();
+}
+
+
+InterFace B{
+public void m1();
+}
+
+InterFace C extends A,B{
+public void m1();
+}
+
+class C impliments A{
+
+}
+
+-----------Data Hiding---------
+
+class A{
+private static balance =20000;
+public static void getbalance(){
+system.out.print(balance)
+}
+
+
+------------Method signature--------
+
+public static void method(int a,int b){}
+public static void method(int a,String s){}
+public static void method(String s,int a){}
+
+type of paramiter----
+seqence of paramiter-
+No of paramiter---
+
+
+
+

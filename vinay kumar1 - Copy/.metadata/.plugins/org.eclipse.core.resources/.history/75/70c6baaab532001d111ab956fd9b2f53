@@ -1,0 +1,25 @@
+package Vtiger.Vtiger;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import com.github.dockerjava.api.model.Driver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+import io.github.bonigarcia.wdm.managers.ChromeDriverManager;
+
+public class Utilities {
+
+	public WebDriver ldriver;
+	
+	public void LaunchBrower() {
+		WebDriverManager.chromedriver().setup();
+		ldriver= new ChromeDriver();
+				
+	}
+	public void hitURL() {
+		ldriver.get("http://localhost:8888");
+		
+	}
+
+}

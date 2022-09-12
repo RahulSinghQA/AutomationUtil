@@ -1,0 +1,74 @@
+package Vtiger.Vtiger.StepDescription;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import Vtiger.Vtiger.LoginPage.LoginPage;
+import io.cucumber.java.en.*;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import junit.framework.Assert;
+
+public class StepDef {
+
+	public WebDriver driver;
+	public LoginPage loginObj;
+	
+	
+@Given("launch chrome browser")
+public void launch_chrome_browser() {
+	WebDriverManager.chromedriver().setup();
+	driver=new ChromeDriver();
+
+}
+
+@When("launch url {string}")
+public void launch_url(String string) {
+	driver.get("http://localhost:8888/");
+	
+}
+
+@When("enter username \"admin\"and password {string}")
+public void enter_username_admin_and_password(String string) {
+	loginObj.enterUsername("admin");
+	loginObj.enterPassword("admin");
+	
+}
+
+@When("click on login Button")
+public void click_on_login_button() {
+	loginObj.clickOnLoginBT();
+
+}
+
+@Then("home page should be visible {string}")
+public void home_page_should_be_visible(String string) {
+String actualTitle=driver.getTitle();
+if(actualTitle.contains("admin - My Home Page - Home - vtiger CRM 5 - Commercial Open Source CRM")) {
+ Assert.assertTrue(true);	
+}else {
+	Assert.assertFalse(true);
+}
+
+}
+
+@When("click on signout Button")
+public void click_on_signout_button() {
+loginObj.signOut();
+
+}
+
+@Then("login page should be visible")
+public void login_page_should_be_visible() {
+	String actualTitle=driver.getTitle();
+	if(actualTitle.contains("vtiger CRM 5 - Commercial Open Source CRM")) {
+		Assert.assertTrue(true);
+	}else {
+		Assert.assertFalse(true);
+	}
+
+
+}
+
+
+	
+}

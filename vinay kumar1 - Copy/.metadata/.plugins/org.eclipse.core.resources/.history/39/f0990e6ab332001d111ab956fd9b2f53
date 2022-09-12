@@ -1,0 +1,9 @@
+package Vtiger.Vtiger;
+
+public class LoginPage {
+	
+	public LoginPage() {
+		
+	}
+
+}

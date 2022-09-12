@@ -1,0 +1,17 @@
+package Vtiger.Vtiger;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Utilities {
+	 public 
+	
+	public void LaunchBrower() {
+		WebDriverManager.chromedriver().setup();
+		dri
+				
+	}
+	public void hitURL() {
+		
+	}
+
+}
